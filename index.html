@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RestoPOS - Premium In-House Ordering & POS</title>
+    <meta name="description" content="Professional restaurant in-house dine-in ordering, live table management, bill requests, cash payment calculation, and order tracking system." />
+    <meta property="og:title" content="RestoPOS - Premium In-House Ordering & POS" />
+    <meta property="og:description" content="Professional restaurant in-house dine-in ordering, live table management, bill requests, cash payment calculation, and order tracking system." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Khmer:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Siemreap&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+        #printable-receipt, #printable-receipt * {
+          visibility: visible;
+        }
+        #printable-receipt {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 80mm;
+          margin: 0 auto;
+          padding: 10px;
+          background: white !important;
+          color: black !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased selection:bg-amber-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

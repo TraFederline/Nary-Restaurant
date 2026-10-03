@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --khmer-font: 'Kantumruy Pro', 'Battambang', 'Siemreap', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  /* Full Khmer language site-wide typography */
+  html[lang="km"],
+  html[lang="km"] body,
+  html[lang="km"] input,
+  html[lang="km"] select,
+  html[lang="km"] textarea,
+  html[lang="km"] button,
+  html[lang="km"] table,
+  html[lang="km"] th,
+  html[lang="km"] td,
+  html[lang="km"] .font-sans,
+  .font-khmer {
+    font-family: var(--khmer-font), 'Kantumruy Pro', 'Battambang', system-ui, sans-serif !important;
+    letter-spacing: 0.015em;
+  }
+
+  /* Specific heading styling for Khmer */
+  html[lang="km"] h1,
+  html[lang="km"] h2,
+  html[lang="km"] h3,
+  html[lang="km"] h4,
+  html[lang="km"] h5,
+  html[lang="km"] h6 {
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+  }
+
+  /* Clean site-specific button padding & line-height in Khmer */
+  html[lang="km"] button {
+    line-height: 1.5;
+  }
+
+  /* Clean site-specific table cell padding and line-height in Khmer */
+  html[lang="km"] table th,
+  html[lang="km"] table td {
+    line-height: 1.6;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  /* Smooth theme transitions */
+  body {
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Specific Font Family Classes */
+.font-kantumruy {
+  font-family: 'Kantumruy Pro', system-ui, sans-serif !important;
+}
+
+.font-battambang {
+  font-family: 'Battambang', system-ui, sans-serif !important;
+}
+
+.font-siemreap {
+  font-family: 'Siemreap', system-ui, sans-serif !important;
+}
+
+.font-noto-khmer {
+  font-family: 'Noto Sans Khmer', system-ui, sans-serif !important;
+}
+
+/* Custom scrollbar for POS tickets and menu grids */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.6);
+}

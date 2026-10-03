@@ -1,0 +1,8 @@
+{
+  "name": "Remix RestoPOS - Premium In-House Ordering \u0026 POS",
+  "description": "Professional restaurant in-house dine-in ordering, live table management, bill requests, cash payment calculation, and order tracking system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
